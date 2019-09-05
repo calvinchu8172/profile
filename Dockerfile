@@ -23,7 +23,7 @@ RUN mkdir -p tmp/bids
 RUN bundle install
 
 # Add a script to be executed every time the container starts.
-COPY ./pcloud-portal/entrypoint.sh /usr/bin/
+COPY ./profile/entrypoint.sh /usr/bin/
 RUN chmod +x /usr/bin/entrypoint.sh
 ENTRYPOINT ["entrypoint.sh"]
 
