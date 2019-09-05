@@ -17,7 +17,7 @@ RUN wget https://github.com/jwilder/dockerize/releases/download/$DOCKERIZE_VERSI
 
 
 RUN mkdir -p $APP_HOME
-COPY ./pcloud-portal $APP_HOME
+COPY ./profile $APP_HOME
 WORKDIR $APP_HOME
 RUN mkdir -p tmp/bids
 RUN bundle install
